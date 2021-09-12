@@ -1,16 +1,11 @@
-import { HStack, Icon } from "@chakra-ui/react";
-import { AtSignIcon, ChatIcon, StarIcon } from "@chakra-ui/icons";
+import { HStack, Image } from "@chakra-ui/react";
 
 const Footer = () => (
-	<HStack>
+	<HStack justifyContent="space-around">
 		{/* The default icon size is 1em (16px) */}
-		<Icon as={AtSignIcon} w={30} h={30} />
-
-		{/* Use the `boxSize` prop to change the icon size */}
-		<Icon as={ChatIcon} w={30} h={30} />
-
-		{/* Use the `color` prop to change the icon color */}
-		<Icon as={StarIcon} w={30} h={30} color="red.500" />
+		<Image src="/public/telegram-plane.svg" boxSize="60px" />
+		<Image src="/public/twitter.svg" boxSize="60px" />
+		<Image src="/public/envelope.svg" boxSize="60px" />
 	</HStack>
 );
 
