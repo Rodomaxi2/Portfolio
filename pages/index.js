@@ -17,7 +17,7 @@ const Index = () => (
 		</div>
 		<div className="row">
 			<div className="col-md-12">
-				<div className="card card-body bg-dark">
+				<div className="card card-body bg-dark" id="projects">
 					<Projects />
 				</div>
 			</div>
