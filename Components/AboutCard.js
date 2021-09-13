@@ -7,7 +7,7 @@ const AboutCard = () => (
 						<img src="profile_picture.jpg" alt="Rodolfo Maximo" className="img-fluid" />
 					</div>
 					<div className="col-md-8">
-						<h1>Roldolfo Maximo</h1>
+						<h1>Rodolfo Maximo</h1>
 						<h3>Computer Science Student</h3>
 						<h4>
 							Hi, I am a student who loves to learn about technology, I have worked in

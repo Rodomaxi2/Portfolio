@@ -1,7 +1,5 @@
-import { Box } from "@chakra-ui/layout";
+import { Box, Center } from "@chakra-ui/react";
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import Container from "../Components/Container";
 import AboutCard from "../Components/AboutCard";
 import Projects from "../Components/Projects";
@@ -12,19 +10,13 @@ const Index = () => (
 		<Head>
 			<title>My portfolio</title>
 		</Head>
-		<div className="about">
+		<Box className="about">
 			<AboutCard />
-		</div>
-		<div className="row">
-			<div className="col-md-12">
-				<div className="card card-body bg-dark" id="projects">
-					<Projects />
-				</div>
-			</div>
-		</div>
-		<div>
+		</Box>
+		<Projects />
+		<Box>
 			<Footer />
-		</div>
+		</Box>
 	</Container>
 );
 

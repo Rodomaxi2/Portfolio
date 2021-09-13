@@ -1,10 +1,14 @@
-import { Box } from "@chakra-ui/layout";
+import { Box, Center, Container as Conta } from "@chakra-ui/react";
 import Navbar from "./Navbar";
 
 const Container = ({ children }) => (
 	<Box>
 		<Navbar />
-		<main className="container py-5">{children}</main>
+		<Center>
+			<Conta py="48px" w="80%">
+				{children}
+			</Conta>
+		</Center>
 	</Box>
 );
 
