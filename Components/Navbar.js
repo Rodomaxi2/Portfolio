@@ -9,7 +9,7 @@ const Navbar = () => (
 			h="48px"
 			pos="fixed"
 			top="0"
-			bg="#212529"
+			bg="#355C7D"
 			justifyContent="space-evenly"
 			alignItems="center"
 			zIndex="1"

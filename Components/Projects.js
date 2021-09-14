@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 import dataProjects from "../data/info.json";
 
 const Projects = () => (
-	<VStack bg="#212529" w="100%" id="projects" padding="1%">
+	<VStack bg="#C06C84" w="100%" id="projects" padding="1%">
 		<Box>
 			<Center>
 				<Text color="white" fontSize="35px">

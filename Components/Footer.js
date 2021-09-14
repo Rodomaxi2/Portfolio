@@ -4,7 +4,7 @@ import { faTelegramPlane, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => (
-	<Box h="70px">
+	<Box h="auto" bg="#355C7D">
 		<Center fontSize="22px">Find my social media</Center>
 		<HStack justifyContent="space-around">
 			{/* The default icon size is 1em (16px) */}
