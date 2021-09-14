@@ -14,9 +14,17 @@ const Projects = () => (
 
 		<Center w="90%">
 			<Grid
-				templateColumns={["repeat(1,1fr)", "repeat(2,1fr)", "repeat(3,1fr)"]}
+				templateColumns={[
+					"repeat(1,1fr)",
+					"repeat(2,1fr)",
+					"repeat(3,1fr)",
+					"repeat(3,1fr)",
+				]}
+				templateRows="repeat(auto,1fr)"
 				columnGap={10}
 				rowGap={10}
+				w="100%"
+				bg="white"
 			>
 				{dataProjects &&
 					dataProjects.map((item, idx) => <ProjectCard item={item} index={idx} />)}

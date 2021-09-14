@@ -5,13 +5,13 @@ import PropTypes from "prop-types";
 const ProjectCard = ({ item, index }) => {
 	const hola = "hola";
 	return (
-		<GridItem key={index} w="100%" bg="#6C5B7B" padding="10px" rounded="5px">
+		<GridItem key={index} w="100%" bg="#6C5B7B" padding="10px" rounded="5px" colSpan="1">
 			<Center>
 				<Flex>
 					<VStack>
 						<Center>
 							<Link href={item.link} target="_blank">
-								<Image src={item.image} h="150px" w="300px" objectFit="fill" />
+								<Image src={item.image} h="150px" w="100%" objectFit="fill" />
 							</Link>
 						</Center>
 						<Text textColor="white" fontSize="22px">

@@ -14,7 +14,7 @@ const Navbar = () => (
 			alignItems="center"
 			zIndex="1"
 		>
-			<Link href="/" color="white">
+			<Link href="/" color="white" textDecoration="none">
 				Welcome to my portfolio
 			</Link>
 			<Stack direction="row" spacing="30">
