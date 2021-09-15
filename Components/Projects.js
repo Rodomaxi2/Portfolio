@@ -24,7 +24,6 @@ const Projects = () => (
 				columnGap={10}
 				rowGap={10}
 				w="100%"
-				bg="white"
 			>
 				{dataProjects &&
 					dataProjects.map((item, idx) => <ProjectCard item={item} index={idx} />)}

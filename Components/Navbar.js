@@ -1,5 +1,5 @@
 import { Box, Stack, Link, Flex } from "@chakra-ui/react";
-// import Link from "next/link";
+// import { Link as nexLink } from "next/link";
 
 const Navbar = () => (
 	<Box>
@@ -14,14 +14,14 @@ const Navbar = () => (
 			alignItems="center"
 			zIndex="1"
 		>
-			<Link href="/" color="white" textDecoration="none">
+			<Link href="/" color="white" textDecoration="none" fontSize="2xl">
 				Welcome to my portfolio
 			</Link>
 			<Stack direction="row" spacing="30">
-				<Link href="#projects" color="white">
+				<Link href="/#projects" color="white" fontSize="lg">
 					Projects
 				</Link>
-				<Link href="/contact" color="white">
+				<Link href="/contact" color="white" fontSize="lg">
 					Contact
 				</Link>
 			</Stack>

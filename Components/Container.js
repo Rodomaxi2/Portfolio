@@ -5,7 +5,7 @@ const Container = ({ children }) => (
 	<Box bg="#2A363B">
 		<Navbar />
 		<Center>
-			<Conta paddingTop="48px" w="80%">
+			<Conta paddingTop="48px" w="80%" maxW="100%">
 				{children}
 			</Conta>
 		</Center>

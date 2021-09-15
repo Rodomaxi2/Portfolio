@@ -9,15 +9,15 @@ const Footer = () => (
 		<HStack justifyContent="space-around">
 			{/* The default icon size is 1em (16px) */}
 			<Link href="https://t.me/FamousZev" target="_blank">
-				<FontAwesomeIcon icon={faTelegramPlane} size="5x" />
+				<FontAwesomeIcon icon={faTelegramPlane} size="4x" />
 			</Link>
 
 			<Link href="https://twitter.com/rodomaxim" target="_blank">
-				<FontAwesomeIcon icon={faTwitter} size="5x" />
+				<FontAwesomeIcon icon={faTwitter} size="4x" />
 			</Link>
 
 			<Link href="https://t.me/FamousZev" target="_blank">
-				<FontAwesomeIcon icon={faEnvelope} size="5x" />
+				<FontAwesomeIcon icon={faEnvelope} size="4x" />
 			</Link>
 		</HStack>
 	</Box>
