@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import { Box, Center, Grid, Text, VStack } from "@chakra-ui/react";
 import ProjectCard from "./ProjectCard";
 import dataProjects from "../data/info.json";
@@ -26,7 +27,9 @@ const Projects = () => (
 				w="100%"
 			>
 				{dataProjects &&
-					dataProjects.map((item, idx) => <ProjectCard item={item} index={idx} />)}
+					dataProjects.map((item, idx) => (
+						<ProjectCard item={item} index={idx} key={`PojectCard-${idx}`} />
+					))}
 			</Grid>
 		</Center>
 	</VStack>
