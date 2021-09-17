@@ -16,7 +16,7 @@ const Footer = () => (
 				<FontAwesomeIcon icon={faTwitter} size="4x" />
 			</Link>
 
-			<Link href="https://t.me/FamousZev" target="_blank">
+			<Link href="mailto:rodomaxi2@gmail.com" target="_blank">
 				<FontAwesomeIcon icon={faEnvelope} size="4x" />
 			</Link>
 		</HStack>
