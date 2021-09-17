@@ -1,9 +1,20 @@
 import { Flex, Center, GridItem, VStack, Text, Link, Image } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 
 import PropTypes from "prop-types";
 
+const MotionGridItem = motion(GridItem);
+
 const ProjectCard = ({ item, index }) => (
-	<GridItem key={index} w="100%" bg="#2A363B" padding="10px" rounded="5px" colSpan="1">
+	<MotionGridItem
+		key={index}
+		w="100%"
+		bg="#2A363B"
+		padding="10px"
+		rounded="5px"
+		colSpan="1"
+		whileHover={{ scale: 1.1 }}
+	>
 		<Center>
 			<Flex>
 				<VStack>
@@ -19,7 +30,7 @@ const ProjectCard = ({ item, index }) => (
 				</VStack>
 			</Flex>
 		</Center>
-	</GridItem>
+	</MotionGridItem>
 );
 
 ProjectCard.propTypes = {
