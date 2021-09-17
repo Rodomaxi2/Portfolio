@@ -9,7 +9,9 @@ import {
 	Box,
 	Input,
 	VStack,
+	Button,
 } from "@chakra-ui/react";
+import { resolveConfig } from "prettier";
 
 const ContactForm = () => {
 	const {
@@ -18,22 +20,27 @@ const ContactForm = () => {
 		watch,
 		formState: { errors },
 	} = useForm();
+
 	const onSubmit = (data) => console.log(data);
 
+	// console.log(watch("name"), watch("email"), watch("message"));
+	// emailto:rodomaxi2@gmail.com?subject=${name} ${email}&body=${message}
+
 	return (
-		<Center bg="#A8A7A7" padding="20px" w="100%">
+		<Center bg="#white" padding="20px" w="100%">
 			<form onSubmit={handleSubmit(onSubmit)}>
 				<VStack>
-					<input defaultValue="test" {...register("example")} />
+					<input placeholder="Full Name" {...register("name", { required: true })} />
+					{errors.name && <span>This field is required</span>}
 
-					{/* include validation with required or other standard HTML validation rules */}
-					<input {...register("exampleRequired", { required: true })} />
-					{/* errors will return when field validation fails  */}
-					{errors.exampleRequired && <span>This field is required</span>}
+					<input placeholder="Email" {...register("email", { required: true })} />
+					{errors.email && <span>This field is required</span>}
+
+					<input placeholder="Message" {...register("message", { required: true })} />
+					{errors.message && <span>This field is required</span>}
 
 					<input type="submit" />
 				</VStack>
-				{/* register your input into the hook by invoking the "register" function */}
 			</form>
 		</Center>
 	);
