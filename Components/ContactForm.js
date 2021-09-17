@@ -37,7 +37,11 @@ const ContactForm = () => {
 		<Center bg="#white" padding="20px" w="100%">
 			<form onSubmit={handleSubmit(onSubmit)}>
 				<VStack>
-					<input placeholder="Full Name" {...register("name", { required: true })} />
+					<input
+						type="text"
+						placeholder="Full Name"
+						{...register("name", { required: true })}
+					/>
 					{errors.name && <span>This field is required</span>}
 
 					<input
@@ -48,6 +52,7 @@ const ContactForm = () => {
 					{errors.email && <span>This field is required</span>}
 
 					<input
+						type="text"
 						placeholder="Message"
 						{...register(
 							"message",
