@@ -2,37 +2,37 @@
 	{
 		"title": "Drum Machine",
 		"description": "You can make music with your keyboard!!",
-		"image": "drumMachine.PNG",
+		"image": "/images/drumMachine.PNG",
 		"link": "https://codepen.io/rodomaxi/pen/WNORGjX"
 	},
 	{
 		"title": "Go Documentation",
 		"description": "Learn the basics of Golang",
-		"image": "GoDocument.PNG",
+		"image": "/images/GoDocument.PNG",
 		"link": "https://codepen.io/rodomaxi/pen/ExXYdJX"
 	},
 	{
 		"title": "Random Quote Machine",
 		"description": "Looking for some inspiration?",
-		"image": "randomQuote.PNG",
+		"image": "/images/randomQuote.PNG",
 		"link": "https://codepen.io/rodomaxi/pen/zYzKbMy"
 	},
 	{
 		"title": "Markdown Previewer",
 		"description": "A tool were you can see the markdown in real time",
-		"image": "markdown.PNG",
+		"image": "/images/markdown.PNG",
 		"link": "https://codepen.io/rodomaxi/pen/mdwOOWK"
 	},
 	{
 		"title": "Robot Behaviour",
 		"description": "In my team I programmed the behaviour of our sumo robot",
-		"image": "arduino.PNG",
+		"image": "/images/arduino.PNG",
 		"link": "https://github.com/Rodomaxi2/tecateChan"
 	},
 	{
 		"title": "News Web Scraper",
 		"description": "I also made a web scraper with Python",
-		"image": "python.png",
+		"image": "/images/python.png",
 		"link": "https://github.com/Rodomaxi2/ScraperNoticias"
 	}
 ]

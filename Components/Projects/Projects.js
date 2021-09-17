@@ -1,7 +1,7 @@
 /* eslint-disable react/no-array-index-key */
 import { Box, Center, Grid, Text, VStack } from "@chakra-ui/react";
-import ProjectCard from "./ProjectCard";
-import dataProjects from "../data/info.json";
+import ProjectCard from "../projectCard/ProjectCard";
+import dataProjects from "../../data/info.json";
 
 const Projects = () => (
 	<VStack bg="#C06C84" w="100%" id="projects" padding="1%">

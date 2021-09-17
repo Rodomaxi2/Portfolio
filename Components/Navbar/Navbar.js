@@ -14,14 +14,14 @@ const Navbar = () => (
 			alignItems="center"
 			zIndex="1"
 		>
-			<Link href="/" color="white" textDecoration="none" fontSize="2xl">
+			<Link href="/" color="white" textDecoration="none" fontSize={["md", "lg", "xl", "2xl"]}>
 				Welcome to my portfolio
 			</Link>
 			<Stack direction="row" spacing="30">
-				<Link href="/#projects" color="white" fontSize="lg">
+				<Link href="/#projects" color="white" fontSize={["sm", "md", "lg"]}>
 					Projects
 				</Link>
-				<Link href="/contact" color="white" fontSize="lg">
+				<Link href="/contact" color="white" fontSize={["sm", "md", "lg"]}>
 					Contact
 				</Link>
 			</Stack>

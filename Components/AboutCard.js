@@ -1,11 +1,11 @@
-import { Box, HStack, Heading, Image, Text, Flex } from "@chakra-ui/react";
+import { Box, Heading, Image, Text, Flex } from "@chakra-ui/react";
 
 const AboutCard = () => (
 	<Box bg="#6C5B7B" padding="20px" w="100%">
-		<Flex>
+		<Flex flexDirection={["column", "column", "column", "row"]}>
 			<Box>
 				<Image
-					src="profile_picture.jpg"
+					src="/images/profile_picture.jpg"
 					alt="Rodolfo Maximo"
 					w="2000px"
 					objectFit="cover"
