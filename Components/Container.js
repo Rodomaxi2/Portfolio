@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Box, Center, Container as Conta } from "@chakra-ui/react";
 import Navbar from "./Navbar/Navbar";
 import Footer from "./Footer";
@@ -13,5 +14,9 @@ const Container = ({ children }) => (
 		<Footer />
 	</Box>
 );
+
+Container.propTypes = {
+	children: PropTypes.node.isRequired,
+};
 
 export default Container;

@@ -1,6 +1,6 @@
 /* eslint-disable react/no-array-index-key */
 import { Box, Center, Grid, Text, VStack } from "@chakra-ui/react";
-import ProjectCard from "../projectCard/ProjectCard";
+import ProjectCard from "../ProjectCard/ProjectCard";
 import dataProjects from "../../data/info.json";
 
 const Projects = () => (

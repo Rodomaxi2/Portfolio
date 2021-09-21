@@ -1,5 +1,5 @@
-import Container from "../Components/Container";
-import ContactForm from "../Components/contactForm";
+import Container from "../components/Container";
+import ContactForm from "../components/ContactForm";
 
 const Contact = () => (
 	<Container>

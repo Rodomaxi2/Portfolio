@@ -38,7 +38,7 @@ ProjectCard.propTypes = {
 	index: PropTypes.number,
 };
 
-ProjectCard.defaulProps = {
+ProjectCard.defaultProps = {
 	item: {},
 	index: 0,
 };
