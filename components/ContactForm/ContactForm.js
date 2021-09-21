@@ -22,7 +22,7 @@ const ContactForm = () => {
 	};
 
 	return (
-		<Center bg="#6C5B7B" maxW="100%" maxH="100%">
+		<Center bg="#6C5B7B" maxW="100%" minH="80vh">
 			<form onSubmit={handleSubmit(onSubmit)}>
 				<VStack>
 					<Center color="white" fontSize="xl">

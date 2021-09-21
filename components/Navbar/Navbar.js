@@ -14,14 +14,30 @@ const Navbar = () => (
 			alignItems="center"
 			zIndex="1"
 		>
-			<Link href="/" color="white" textDecoration="none" fontSize={["md", "lg", "xl", "2xl"]}>
+			<Link
+				href="/"
+				color="white"
+				textDecoration="none"
+				fontSize={["md", "lg", "xl", "2xl"]}
+				_hover={{ color: "#A8E6CE" }}
+			>
 				Welcome to my portfolio
 			</Link>
 			<Stack direction="row" spacing="30">
-				<Link href="/#projects" color="white" fontSize={["sm", "md", "lg"]}>
+				<Link
+					href="/#projects"
+					color="white"
+					fontSize={["sm", "md", "lg"]}
+					_hover={{ color: "#A8E6CE" }}
+				>
 					Projects
 				</Link>
-				<Link href="/contact" color="white" fontSize={["sm", "md", "lg"]}>
+				<Link
+					href="/contact"
+					color="white"
+					fontSize={["sm", "md", "lg"]}
+					_hover={{ color: "#A8E6CE" }}
+				>
 					Contact
 				</Link>
 			</Stack>
