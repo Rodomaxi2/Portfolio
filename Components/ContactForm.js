@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import { useRef } from "react";
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import {
 	Center,
 	FormControl,
@@ -17,10 +17,11 @@ const ContactForm = () => {
 	const {
 		register,
 		handleSubmit,
-		formState: { errors },
+		formState: { errors, isSubmitting },
 	} = useForm();
 
 	const mailHref = useRef();
+
 	const onSubmit = (data) => {
 		const email = "rodomaxi2@gmail.com";
 		mailHref.current.setAttribute(
@@ -30,47 +31,56 @@ const ContactForm = () => {
 		mailHref.current.click();
 	};
 
-	// console.log(watch("name"), watch("email"), watch("message"));
-	// emailto:rodomaxi2@gmail.com?subject=${name} ${email}&body=${message}
-
 	return (
-		<Center bg="#white" padding="20px" w="100%">
+		<Center bg="#6C5B7B" padding="200px" w="100%">
 			<form onSubmit={handleSubmit(onSubmit)}>
 				<VStack>
-					<input
-						type="text"
-						placeholder="Full Name"
-						{...register("name", { required: true })}
-					/>
-					{errors.name && <span>This field is required</span>}
+					<Center color="white" fontSize="lg">
+						Contact me!
+					</Center>
+					<FormControl isInvalid={errors.name}>
+						<Input
+							textColor="white"
+							name="name"
+							type="text"
+							placeholder="Full Name"
+							{...register("name", { required: "This is required" })}
+						/>
+						<FormErrorMessage>{errors.name && errors.name.message}</FormErrorMessage>
+					</FormControl>
 
-					<input
-						type="email"
-						placeholder="Email"
-						{...register("email", { required: true })}
-					/>
-					{errors.email && <span>This field is required</span>}
-
-					<input
-						type="text"
-						placeholder="Message"
-						{...register(
-							"message",
-							{ required: true },
-							{
+					<FormControl isInvalid={errors.email}>
+						<Input
+							textColor="white"
+							placeholder="Email"
+							{...register("email", {
 								pattern: {
 									value: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-									message: "Ingrese un correo valido",
+									message: "Invalid email",
 								},
-							},
-						)}
-					/>
-					{errors.message && <span>This field is required</span>}
+							})}
+						/>
+						<FormErrorMessage>{errors.email && errors.email.message}</FormErrorMessage>
+					</FormControl>
+
+					<FormControl isInvalid={errors.message}>
+						<Input
+							textColor="white"
+							type="text"
+							placeholder="Message"
+							{...register("message", { required: "This is required" })}
+						/>
+						<FormErrorMessage>
+							{errors.message && errors.message.message}
+						</FormErrorMessage>
+					</FormControl>
 
 					<a ref={mailHref} href="mailto:name@mail.com" style={{ display: "none" }}>
 						Send mail
 					</a>
-					<input type="submit" />
+					<Button isLoading={isSubmitting} type="submit">
+						Submit
+					</Button>
 				</VStack>
 			</form>
 		</Center>
