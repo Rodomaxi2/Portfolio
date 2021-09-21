@@ -14,9 +14,6 @@ const Index = () => (
 			<AboutCard />
 		</Box>
 		<Projects />
-		<Box>
-			<Footer />
-		</Box>
 	</Container>
 );
 

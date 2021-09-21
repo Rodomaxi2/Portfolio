@@ -32,10 +32,10 @@ const ContactForm = () => {
 	};
 
 	return (
-		<Center bg="#6C5B7B" padding="200px" w="100%">
+		<Center bg="#6C5B7B" maxW="100%" maxH="100%">
 			<form onSubmit={handleSubmit(onSubmit)}>
 				<VStack>
-					<Center color="white" fontSize="lg">
+					<Center color="white" fontSize="xl">
 						Contact me!
 					</Center>
 					<FormControl isInvalid={errors.name}>
