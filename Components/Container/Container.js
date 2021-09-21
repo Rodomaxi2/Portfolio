@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { Box, Center, Container as Conta } from "@chakra-ui/react";
-import Navbar from "./Navbar/Navbar";
-import Footer from "./Footer";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 
 const Container = ({ children }) => (
 	<Box bg="#2A363B">

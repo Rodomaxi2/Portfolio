@@ -30,6 +30,7 @@ const ContactForm = () => {
 					</Center>
 					<FormControl isInvalid={errors.name}>
 						<Input
+							id="inputName"
 							textColor="white"
 							name="name"
 							type="text"
@@ -41,6 +42,7 @@ const ContactForm = () => {
 
 					<FormControl isInvalid={errors.email}>
 						<Input
+							id="inputEmail"
 							textColor="white"
 							placeholder="Email"
 							{...register("email", {
@@ -55,6 +57,7 @@ const ContactForm = () => {
 
 					<FormControl isInvalid={errors.message}>
 						<Input
+							id="inputMessage"
 							textColor="white"
 							type="text"
 							placeholder="Message"
