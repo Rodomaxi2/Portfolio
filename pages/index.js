@@ -1,9 +1,8 @@
-import { Box, Center } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import Head from "next/head";
 import Container from "../Components/Container";
 import AboutCard from "../Components/AboutCard";
 import Projects from "../Components/Projects";
-import Footer from "../Components/Footer";
 
 const Index = () => (
 	<Container>

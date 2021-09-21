@@ -1,17 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import { useRef } from "react";
-import { useForm, Controller } from "react-hook-form";
-import {
-	Center,
-	FormControl,
-	FormLabel,
-	FormErrorMessage,
-	FormHelperText,
-	Box,
-	Input,
-	VStack,
-	Button,
-} from "@chakra-ui/react";
+import { useForm } from "react-hook-form";
+import { Center, FormControl, FormErrorMessage, Input, VStack, Button } from "@chakra-ui/react";
 
 const ContactForm = () => {
 	const {
